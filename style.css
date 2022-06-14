@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --red: hsl(0, 100%, 74%);
+    --green: hsl(154, 59%, 51%);
+    --blue: hsl(248, 32%, 49%);
+    --dark-blue: hsl(249, 10%, 26%);
+    --gray-blue: hsl(246, 25%, 77%);
+}
+body{
+    background: var(--red) url('images/bg-intro-desktop.png');
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;;
+}
+main{
+    width: 80vw;
+    margin: auto;
+    padding: 1.5em 0;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.details{
+    flex: 1;
+    margin-right: 4em;
+}
+article{
+    color: white;
+}
+.title{
+    font-size: 4em;
+    font-weight: 700;
+    margin-bottom: .5em;
+}
+.text{
+    line-height: 2em;
+    font-size: 17px;
+}
+.form-wrapper{
+    flex: 1;
+}
+.info{
+    background-color: var(--blue);
+    color: #fff;
+    text-align: center;
+    height: 3em;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5em;
+    box-shadow: 1px 5px rgba(0, 0, 0, .2);
+}
+.info span{
+    font-weight: bold;
+}
+.form{
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 5px;
+    box-shadow: 2px 5px rgba(0, 0, 0, .2);
+}
+form{
+    width: 90%;
+    margin: auto;
+}
+form input{
+    display: block;
+    padding: 1em;
+    margin-top: 1.2em;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid var(--gray-blue);
+    font-weight: 700;
+}
+input:focus{
+    outline: none;
+    border: 1px solid var(--dark-blue);
+
+}
+.error{
+    display: block;
+    text-align: right;
+    color: var(--red);
+}
+label{
+    text-align: right;
+}
+.hidden{
+    display: none;
+}
+button{
+    margin-top: 2em;
+    width: 100%;
+    background-color: var(--green);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 1.3em;
+    font-weight: 700;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, .2);
+    cursor: pointer;
+}
+.extra{
+    margin-top: 2em;
+    text-align: center;
+    color: var(--gray-blue);
+}
+.extra span{
+    font-weight: 600;
+    color: var(--red)
+}
+@media screen and (max-width: 375px) {
+    main {
+            width: 80vw;
+            margin: auto;
+            padding-top: 2em;
+            padding-bottom: 3em;
+        }
+    
+    .container {
+        height: 100vh;
+        display: block;
+    }
+
+    .details {
+        margin-right: 2em;
+        margin-bottom: 3.4em;
+        text-align: center;
+    }
+.title {
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 1.3em;
+}
+.info{
+    padding: 2.5em;
+}
+}
